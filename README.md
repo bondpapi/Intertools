@@ -5,29 +5,14 @@ Maximizing Sum of Squares Modulo M
 This project solves the problem of maximizing the sum of squares of integers chosen from multiple lists, modulo a given value M.
 The objective is to pick one element from each list such that the sum of their squares is maximized, and the result is calculated modulo M.
 
-## Table of Contents
-
-Overview
-How It Works
-Features
-Getting Started
-Prerequisites
-Installation
-Usage
-Input Format
-Output Format
-Example
-Explanation
-Contributing
-License
 
 ## Overview
 
 Given K lists of integers, the task is to compute the maximum possible value of the expression:
 
 ​	
-  is an element chosen from the i-th list, and M is a given modulo value.
-  The program finds the best possible selection of elements to maximize the result.
+  *is an element chosen from the i-th list, and M is a given modulo value.*
+  *The program finds the best possible selection of elements to maximize the result.*
 
 
 ## How it Works
@@ -65,15 +50,15 @@ git clone https://github.com/bondpapi/intertools
 
 2. Navigate to the project directory:
 
-cd intertools
+`cd intertools`
 
 ## Usage
 
 # Input Format
-- The first line contains two integers, K (number of lists) and M (the modulo value).
+- The first line contains two integers, `K (number of lists) and M (the modulo value).`
 
 - Each of the next K lines contains:
-    N(the number of integers in the list), followed by N space-separated integers representing the elements of the list.
+    `N(the number of integers in the list), followed by N space-separated integers representing the elements of the list.`
 
 # Output Format
 The program outputs a single integer, representing the maximum value of S modulo M.
@@ -82,15 +67,15 @@ The program outputs a single integer, representing the maximum value of S modulo
 
 # Sample Input
 
-3 1000
+`3 1000`
 
-2 5 4
+`2 5 4`
 
-3 7 8 9
+`3 7 8 9`
 
-5 5 7 8 9 10
+`5 5 7 8 9 10`
 
 # Sample Output
 
-206
+`206`
 
