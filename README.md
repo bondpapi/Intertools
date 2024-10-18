@@ -1,4 +1,4 @@
-# Intertools
+# Itertools
 A python program that helps maximize List combinations. 
 Maximizing Sum of Squares Modulo M
 
