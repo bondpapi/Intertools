@@ -1,6 +1,6 @@
-import intertools
+import itertools
 
-# intertools.product() generates all possible combinations by taking one element from each list
+# itertools.product() generates all possible combinations by taking one element from each list
 
 
 def maximize(K, M, lists):
@@ -10,7 +10,7 @@ def maximize(K, M, lists):
     lists - list of list, each inner list contains the integers we will choose from."""
 
     # Generate all possible combinations of one element from each list
-    all_combinations = intertools.product(*lists)
+    all_combinations = itertools.product(*lists)
 
     # Initialize the maximum value of S to 0 (S is the sum of squares modulo M)
     max_value = 0
@@ -26,11 +26,19 @@ def maximize(K, M, lists):
     return max_value
 
 
-"""Input and Output Handling"""
+def main():
+    """Main function to handle input and output"""
+
+
 # We read two integers, K (number of lists) and M (modulo value)
 K, M = map(int, input().split())
 
 # For each list we split the input and ignore the first value
 lists = [list(map(int, input().split()[1:])) for _ in range(K)]
 
-print(maximize(K, M, lists))
+# Call the maximize function with the input values
+result = maximize(K, M, lists)
+print(result)
+
+if __name__ == "__main__":
+    main()
