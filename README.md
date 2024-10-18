@@ -50,7 +50,7 @@ git clone https://github.com/bondpapi/intertools
 
 2. Navigate to the project directory:
 
-`cd intertools`
+`cd itertools`
 
 ## Usage
 
